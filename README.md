@@ -3,7 +3,7 @@
 A modern chat application powered by Groq AI API for ultra-fast AI responses.
 
 🌟 **Live Demo**: 
-- **Vercel**: https://chatbot-khy8mucfi-aimanyoviars-projects.vercel.app/
+- **Vercel**: [https://chatbot-khy8mucfi-aimanyoviars-projects.vercel.app/](https://chatbot-l89rcyblh-aimanyoviars-projects.vercel.app/)
 - **Surge.sh**: https://chatbot-viar.surge.sh/
 
 ## Features
