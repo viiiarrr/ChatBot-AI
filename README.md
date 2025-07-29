@@ -3,8 +3,15 @@
 A modern chat application powered by Groq AI API for ultra-fast AI responses.
 
 🌟 **Live Demo**: 
+<<<<<<< HEAD
 - **Vercel**: [https://chatbot-khy8mucfi-aimanyoviars-projects.vercel.app/](https://chatbot-l89rcyblh-aimanyoviars-projects.vercel.app/)
 - **Surge.sh**: https://chatbot-viar.surge.sh/
+=======
+- **Primary**: https://chatbot-viar.surge.sh/ ⭐ (Active!)
+- **GitHub Pages**: https://viiiarrr.github.io/ChatBot-AI/ (Coming soon)
+
+> 💡 **Important**: These are direct links to the chat application. No login required!
+>>>>>>> f572191 (Update live demo link - Surge deployment active)
 
 ## Features
 
@@ -38,7 +45,11 @@ groq-ai-chat/
 
 🚀 **Just want to try it?** Visit: https://chatbot-viar.surge.sh/
 
-No installation needed! Just open the link and start chatting with AI.
+✅ **No registration required!** Just click and start chatting with AI instantly.
+
+⚠️ **Don't confuse with**: 
+- `vercel.com` (dashboard login) ❌
+- `chatbot-xxx.vercel.app` (direct app access) ✅
 
 ## For Developers
 
