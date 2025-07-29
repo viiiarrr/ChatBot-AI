@@ -103,11 +103,3 @@ Make sure to set your `VITE_GROQ_API_KEY` in your deployment platform's environm
 3. Commit your changes: `git commit -m 'Add some amazing feature'`
 4. Push to the branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
-
-## License
-
-MIT
-
----
-
-**Made with ❤️ by [viiiarrr](https://github.com/viiiarrr)**
