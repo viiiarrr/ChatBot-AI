@@ -2,6 +2,8 @@
 
 A modern chat application powered by Groq AI API for ultra-fast AI responses.
 
+🌟 **Live Demo**: Coming soon on GitHub Pages!
+
 ## Features
 
 - ⚡ Real-time streaming responses
