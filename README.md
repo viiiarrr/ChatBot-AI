@@ -12,10 +12,13 @@ A modern chat application powered by Groq AI API for ultra-fast AI responses.
 ## Features
 
 - ⚡ Real-time streaming responses
-- 🎨 Modern and responsive UI
-- 🌙 Dark/Light mode support
+- 🎨 Modern and responsive UI (Dark Theme)
+- 📸 **Vision AI Support** - Upload and analyze images
+- 🌙 Dark mode interface
 - 🔒 Secure API key management
 - 📱 Mobile-friendly design
+- 🖼️ Drag & drop image upload
+- 🔍 Intelligent image analysis with LLaVA model
 
 ## Project Structure
 

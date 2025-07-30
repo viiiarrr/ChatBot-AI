@@ -27,6 +27,20 @@ jobs:
       env:
         VITE_GROQ_API_KEY: ${{ secrets.VITE_GROQ_API_KEY }}
 
+    - name: Setup Playwright
+      run: npx playwright install --with-deps chromium
+
+    - name: Take Screenshot
+      run: |
+        npx playwright screenshot --wait-for-timeout=3000 https://chatbot-viar.surge.sh/ screenshots/app-preview.png
+        mkdir -p screenshots
+        
+    - name: Upload Screenshots
+      uses: actions/upload-artifact@v3
+      with:
+        name: screenshots
+        path: screenshots/
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:

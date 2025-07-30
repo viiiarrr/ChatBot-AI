@@ -9,8 +9,40 @@ class GroqAPI {
         }
     }
     
-    async sendMessage(message, conversationHistory = []) {
+    async sendMessage(message, conversationHistory = [], imageData = null) {
         try {
+            let messages = [
+                {
+                    role: 'system',
+                    content: 'Anda adalah asisten AI yang helpful dan ramah. Jawab dalam bahasa Indonesia dengan informatif. Jika ada gambar, analisis dengan detail.'
+                },
+                ...conversationHistory
+            ];
+
+            // Jika ada gambar, gunakan model vision
+            if (imageData) {
+                messages.push({
+                    role: 'user',
+                    content: [
+                        {
+                            type: 'text',
+                            text: message || 'Tolong analisis gambar ini dengan detail.'
+                        },
+                        {
+                            type: 'image_url',
+                            image_url: {
+                                url: imageData
+                            }
+                        }
+                    ]
+                });
+            } else {
+                messages.push({
+                    role: 'user',
+                    content: message
+                });
+            }
+
             const response = await fetch(`${this.baseURL}/chat/completions`, {
                 method: 'POST',
                 headers: {
@@ -18,18 +50,8 @@ class GroqAPI {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    model: 'llama-3.1-8b-instant',
-                    messages: [
-                        {
-                            role: 'system',
-                            content: 'Anda adalah asisten AI yang helpful dan ramah. Jawab dalam bahasa Indonesia dengan informatif.'
-                        },
-                        ...conversationHistory,
-                        {
-                            role: 'user',
-                            content: message
-                        }
-                    ],
+                    model: imageData ? 'llava-v1.5-7b-4096-preview' : 'llama-3.1-8b-instant',
+                    messages: messages,
                     max_tokens: 1500,
                     temperature: 0.7,
                     stream: false
