@@ -12,14 +12,13 @@ document.querySelector('#app').innerHTML = `
   <div class="chat-container">
     <div class="chat-header">
       <div class="status-indicator" id="statusIndicator"></div>
-      <h1>🤖 AI Assistant</h1>
+      <h1>AI Assistant</h1>
       <p>Powered by Groq AI - Super Fast Response</p>
     </div>
     
     <div class="chat-messages" id="chatMessages">
       <div class="message ai-message">
-        Halo @viiiarrr! 👋 Saya adalah AI assistant yang siap membantu Anda. 
-        Silakan tanyakan apa saja - saya akan merespons dengan cepat! 😊
+        Hi, saya akan membantu anda. Silakan tanyakan apa saja yang Anda butuhkan!
       </div>
     </div>
     
